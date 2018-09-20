@@ -4,3 +4,6 @@ variable "secret_key" {}
 variable "region" {
   default = "us-east-1"
 }
+output "public_ip" {
+  value = "${module.server.public_ip}"
+}
